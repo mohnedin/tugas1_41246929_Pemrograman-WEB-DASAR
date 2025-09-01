@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Pemrograman Web Dasar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: #2b5797;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+    }
+    h2 {
+      color: #2b5797;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+    th {
+      background: #2b5797;
+      color: white;
+    }
+    td, th {
+      padding: 10px;
+      text-align: center;
+    }
+    form {
+      background: #eef2f7;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .media {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .media iframe, .media audio {
+      margin: 10px auto;
+      display: block;
+      border-radius: 8px;
+    }
+    .characters {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .characters div {
+      text-align: center;
+    }
+    .characters img {
+      max-width: 150px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>History of Python</h1>
+    <p>Directed by Guido van Rossum (Father of Python)</p>
+  </header>
+
+  <section>
+    <p><em>Halaman ini dibuat untuk memenuhi tugas praktikum sesi 1–14.</em></p>
+
+    <h2>Tujuan</h2>
+    <p>Mahasiswa dapat membuat tabel data yang terstruktur menggunakan elemen HTML.</p>
+
+    <p>Contoh dalam kimia: H₂O, NaCl.</p>
+    <p>Teks <u>garis bawah</u> untuk contoh.</p>
+    <hr>
+
+    <p><strong>Penting:</strong> Struktur HTML harus rapi agar website mudah dipahami.</p>
+    <blockquote>“Ngoding HTML kadang monoton, tapi hasilnya bikin lega.”</blockquote>
+
+    <p>Waktu dibuat: <time datetime="2025-08-28">1 September 2025</time></p>
+    <code>&lt;html&gt; &lt;/html&gt;</code>
+
+    <h2>Daftar Materi</h2>
+    <ul>
+      <li>Struktur Dasar</li>
+      <li>Heading</li>
+      <li>Paragraf</li>
+    </ul>
+
+    <h2>Link</h2>
+    <p>Kunjungi <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>.</p>
+    <nav>
+      <a href="#gambar">Gambar</a> | 
+      <a href="#video">Video</a> | 
+      <a href="#audio">Audio</a>
+    </nav>
+
+    <p title="Tooltip contoh">Arahkan kursor ke teks ini untuk melihat atribut <code>title</code>.</p>
+
+    <h2>Daftar Buku Perpustakaan</h2>
+    <table>
+      <tr><th>Judul</th><th>Penulis</th><th>Tahun</th></tr>
+      <tr><td>Pemrograman Python</td><td>Nedd</td><td>2023</td></tr>
+      <tr><td>Pemrograman Java</td><td>Jill</td><td>2022</td></tr>
+    </table>
+
+    <h2>Formulir Pendaftaran</h2>
+    <form>
+      <label for="nama">Nama:</label> 
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda"><br><br>
+      
+      <label for="email">Email:</label> 
+      <input type="email" id="email" name="email" placeholder="Masukkan email Anda"><br><br>
+      
+      Gender: 
+      <input type="radio" id="genderL" name="gender" value="L">
+      <label for="genderL">Laki-laki</label>
+      <input type="radio" id="genderP" name="gender" value="P">
+      <label for="genderP">Perempuan</label><br><br>
+      
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </section>
+
+  <section>
+    <h2>Movie Synopsis</h2>
+    <p>In the early 1990s, Guido van Rossum, a Dutch programmer,
+    decided to create a new programming language during Christmas holidays.
+    His goal was to design a language that was simple, readable,
+    and could help developers write code more efficiently.
+    This is how Python was born — a language that combined power and simplicity.</p>
+    <p>Over the years, Python grew rapidly, being used for web development,
+    data science, artificial intelligence, and education.
+    Its philosophy of readability and ease of use
+    made it one of the most popular programming languages in the world today.</p>
+    <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python Logo" width="200">
+    
+    <div class="characters">
+      <div>
+        <img src="https://gvanrossum.github.io/images/guido-headshot-2019.jpg" alt="Guido van Rossum">
+        <p>Guido van Rossum</p>
+      </div>
+      <div>
+        <img src="https://www.python.org/static/community_logos/python-powered-h-140x182.png" alt="Python">
+        <p>Python Language</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="media">
+    <h2 id="video">Video</h2>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/J0Aq44Pze-w"
+      title="Kisah Python, oleh Penciptanya, Guido van Rossum"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+
+    <h2 id="audio">Audio</h2>
+    <audio controls>
+      <source src="303 PM - しゃろう.mp3" type="audio/mpeg">
+      Browser Anda tidak mendukung pemutar audio.
+    </audio>
+  </section>
+
+</body>
+</html>
